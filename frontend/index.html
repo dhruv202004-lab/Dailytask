@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyTasks - Sign in</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-panel">
+      <div class="brand-mark">DT</div>
+      <p class="eyebrow">DailyTasks</p>
+      <h1>Plan the day, track the week, finish with clarity.</h1>
+      <p class="muted">A focused workspace for tasks, goals, reminders, and productivity analytics.</p>
+
+      <div class="auth-tabs" role="tablist" aria-label="Authentication">
+        <button class="auth-tab active" data-auth-tab="login" type="button">Login</button>
+        <button class="auth-tab" data-auth-tab="signup" type="button">Signup</button>
+      </div>
+
+      <form id="loginSection" class="auth-form">
+        <label for="loginUser">Gmail</label>
+        <input id="loginUser" type="email" autocomplete="email" placeholder="you@gmail.com">
+        <label for="loginPass">Password</label>
+        <input id="loginPass" type="password" autocomplete="current-password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="signupSection" class="auth-form hidden">
+        <label for="signupUser">Gmail</label>
+        <input id="signupUser" type="email" autocomplete="email" placeholder="you@gmail.com">
+        <label for="signupPass">Password</label>
+        <input id="signupPass" type="password" autocomplete="new-password" placeholder="Create a password">
+        <button type="submit">Create account</button>
+      </form>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
